@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Learning from Videos through Graph-to-Graphs Generative Modeling for Robotic Manipulation">
+        content="See Once, Then Act: Vision-Language-Action Model with Task Learning from One-Shot Video Demonstrations">
   <meta name="keywords" content="Robot Policy Learning, Vision-Language-Action, Diffusion">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Learning from Videos through Graph-to-Graphs Generative Modeling for Robotic Manipulation</title>
+  <title>See Once, Then Act: Vision-Language-Action Model with Task Learning from One-Shot Video Demonstrations</title>
 
   <link rel="stylesheet" href="styles.css">
   
@@ -70,53 +70,13 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Learning from Videos through Graph-to-Graphs Generative Modeling for Robotic Manipulation</h1>
+          <h1 class="title is-1 publication-title">See Once, Then Act: Vision-Language-Action Model with Task Learning from One-Shot Video Demonstrations</h1>
           <div class="is-size-5 publication-authors">
-            
+          
             <span class="author-block">
-              <a href="">Guangyan Chen</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="">Meiling Wang</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="">Te Cui</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Chengcai Yang</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-                <a href="">Mengxiao Hu</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Haoyang Lu</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Qi Shao</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Luojie Yang</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Zicai Peng</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Tianxing Zhou</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="">Xinran Jiang</a><sup>1</sup>
-            </span>
-            <span class="author-block">
-              <a href="">Yi Yang</a><sup>1</sup>*,
-            </span>
-             <span class="author-block">
-              <a href="">Yufeng Yue</a><sup>1</sup>*,
+              <a href="">Anonymous TRO submission</a>
             </span>
               
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            
-            <span class="author-block"><sup>1</sup>Beijing Institute of Technology</span>
-            
           </div>
 
         </div>
@@ -129,14 +89,12 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
      
-      <p><img class="img-fluid" alt="teaser" src="G3M.png"></p>
+      <p><img class="img-fluid" alt="teaser" src="VideoVLA.png"></p>
       <h2 class="subtitle has-text-centered">
       </h2>
     </div>
   </div>
 </section>
-
-
 
 
 
@@ -155,831 +113,162 @@
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-       
-        <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-          <source src="./static/videos/demo_dita.mp4"
-                  type="video/mp4">
-        </video>
-      </div>
-    </div>
-
-    
-    <!--/ Paper video. -->
   </div>
 </section>
 
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Simulated Franka Demonstration</h2>
-    <p class="content">Here, we illustrate the demonstration videos of our model on some benchmarks.</p>
-
-    <h3 class="title is-4">LIBERO</h3>
-    
-    <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/1.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Open the top drawer and put the bowl inside</div>
-            </div>
-          </div>
-          
-          
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/2.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the bowl on top of the cabinet</div>
-            </div>
-          </div>
-    
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/3.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the bowl on the plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/4.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the wine bottle on the rack</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/5.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Open the middle drawer of the cabinet</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/6.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the cream cheese in the bowl</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/7.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the bowl on the stove</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/8.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the wine bottle on top of the cabinet</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/9.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Push the plate to the front of the stove</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_goal/10.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Turn on the stove</div>
-            </div>
-          </div>
-          <!-- <button class="carousel-control left" onclick="prevSlide()">❮</button>
-          <button class="carousel-control right" onclick="nextSlide()">❯</button> -->
-        </div>
-    
-        <script src="script.js"></script>
-    
-      </div>
-
-
-
-
-
-
-
-    <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/1.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the black bowl in the bottom drawer of the cab</div>
-            </div>
-          </div>
-          
-          
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/2.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put both the cream cheese box and the butter in the basket</div>
-            </div>
-          </div>
-    
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/3.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put both moka pots on the stove</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/4.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the white mug on the plate and put the chocolate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/5.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the white mug on the left plate and put the yellow mug on the right plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/6.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Turn on the stove and put the moka pot on it</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/7.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put both the alphabet soup and the cream cheese box in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/8.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put the yellow mug in the microwave oven and close its door</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/9.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Put both the alphabet soup and the tomato sauce in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_long/10.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the book and place it in the back compartment</div>
-            </div>
-          </div>
-          <!-- <button class="carousel-control left" onclick="prevSlide()">❮</button>
-          <button class="carousel-control right" onclick="nextSlide()">❯</button> -->
-        </div>
-    
-        <script src="script.js"></script>
-    
-      </div>
-
-
-
-
-
-    <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/1.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the alphabet soup and place it in the basket</div>
-            </div>
-          </div>
-          
-          
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/2.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the bbq sauce and place it in the basket</div>
-            </div>
-          </div>
-    
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/3.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the chocolate pudding and place it in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/4.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the tomato sauce and place it in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/5.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the ketchup and place it in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/6.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the cream cheese and place it in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/7.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the salad dressing and place it in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/8.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the butter and place it in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/9.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the milk and place it in the basket</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_object/10.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the orange juice and place it in the basket</div>
-            </div>
-          </div>
-          <!-- <button class="carousel-control left" onclick="prevSlide()">❮</button>
-          <button class="carousel-control right" onclick="nextSlide()">❯</button> -->
-        </div>
-    
-        <script src="script.js"></script>
-    
-      </div>
-
-
-
-
-    <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/1.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl from table center and place on the plate</div>
-            </div>
-          </div>
-          
-          
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/2.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl on the stove and place it on the plate</div>
-            </div>
-          </div>
-    
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/3.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl on the cookie box and place it on the plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/4.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl in the top drawer and place it on the plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/5.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl next to the ramekin and place it on the plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/6.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl on the cookie box and place it on the plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/7.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl on the wooden cabinet and place it on the plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/8.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl next to the cookie box and place it on the plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/9.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl next to the plate and place it on the plate</div>
-            </div>
-          </div>
-    
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/video/libero/libero_spatial/10.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">Pick up the black bowl between the plate and the receptacle and place it on the plate</div>
-            </div>
-          </div>
-          <!-- <button class="carousel-control left" onclick="prevSlide()">❮</button>
-          <button class="carousel-control right" onclick="nextSlide()">❯</button> -->
-        </div>
-    
-        <script src="script.js"></script>
-    
-      </div>
-
-
-
-    
-
-
-    <h3 class="title is-4">CALVIN</h3>
-
-    In this part, we show the demonstration video of our model with some Variance setup, include background, tablecloth and lighting condition
-
-    <div class="carousel-container">
-      <div class="carousel">
-      
-        
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/pick up the banana into the box.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pick up the banana into the box</div>
-          </div>
-        </div>
-
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/pick up the racket and hit the ball into the goal.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pick up the racket and hit the ball into the goal</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/pour the water from the teapot to the cup.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pour the water from the teapot to the cup</div>
-          </div>
-        </div>
-
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/open the box and pick up the cube into the box then close the box.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Open the box and pick up the cube into the box then close the box</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/pick up the  banana and move it into the box.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pick up the banana and move it into the box</div>
-          </div>
-        </div> 
-
-       
-      </div>
-
-      <script src="script.js"></script>
-
-    </div>
-
-    <div class="carousel-container">
-      <div class="carousel">
-      
-
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/pouring water into the left cup_lightings2.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pouring water into the left cup</div>
-          </div>
-        </div>
-        
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/Pour into the right cup2.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pour water into the right cup</div>
-          </div>
-        </div> 
-
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/Pour into the left cup.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pour water into the left cup</div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/Pour into the right cup.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pour water into the right cup</div>
-          </div>
-        </div> 
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/pouring water into the left cups2.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pouring water into the left cup</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/Pour into the right cup1.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pour water into the right cup</div>
-          </div>
-        </div> 
-        
-                
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/vairance/Pour the coffee beans from bowl within the drawer to the bowl outside .mp4" type="video/mp4">
-            </video>
-            <div class="card-content">Pour the coffee beans from bowl within the drawer to the bowl outside</div>
-          </div>
-        </div>
-
-       
-      </div>
-
-      <script src="script.js"></script>
-
-    </div>
-
-
-
-    
-  </div>
-  
-</section>
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">Real-to-Sim benchmark SimplerEnv Demonstration</h2>
-    <p class="content">Here, we demonstrate the robust of the proposed model under SimplerEnv. We pretrain on OXE datasets and evaluate on SimplerEnv.</p>
-    <div class="carousel-container">
-      <div class="carousel">
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_-0.08_-0.02_qpos_0.2970907986164093_is_drawer_open_True_has_contact_9.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">open the top drawer, and put the apple into the drawer</div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_-0.05_-0.02_qpos_0.1867281049489975_is_drawer_open_True_has_contact_59.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">open the top drawer and pick up the apple into the drawer</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_0.0_0.0_qpos_0.222.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">open the bottom drawer</div>
-          </div>
-        </div>
-
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_0.0_0.0_qpos_0.000.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">close the top drawer</div>
-          </div>
-        </div>
-
-
-
-
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_0.0_0.0_qpos_0.239.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">open the middle drawer</div>
-          </div>
-        </div>
-
-
-
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_0.0_0.0_qpos_0.258.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">open the bottom drawer</div>
-          </div>
-        </div>
-
-
-      </div>
-
-
-
-     
-    </div>
-
-
-    <div class="carousel-container">
-      <div class="carousel">
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_-0.2925_-0.02_n_lift_significant_22_consec_grasp_True_grasped_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the coke can (novel background)</div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_-0.2925_0.09_n_lift_significant_13_consec_grasp_True_grasped_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the coke can (novel materials)</div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_episode_5_all_obj_keep_height_True_moved_correct_obj_True_moved_wrong_obj_False_near_tgt_obj_True_is_closest_to_tgt_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">move the orange near by coke can</div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_episode_13_all_obj_keep_height_True_moved_correct_obj_True_moved_wrong_obj_False_near_tgt_obj_True_is_closest_to_tgt_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">move the can near by the brush</div>
-          </div>
-        </div>
-
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/success_obj_episode_20_all_obj_keep_height_True_moved_correct_obj_True_moved_wrong_obj_False_near_tgt_obj_True_is_closest_to_tgt_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">move the can near by the brush</div>
-          </div>
-        </div>
-
-      </div>
-
-
-      <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/success_obj_episode_2_moved_correct_obj_True_moved_wrong_obj_False_is_src_obj_grasped_True_consecutive_grasp_True_src_on_target_True.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">put eggplant in basket</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/success_obj_episode_16_moved_correct_obj_True_moved_wrong_obj_False_is_src_obj_grasped_True_consecutive_grasp_True_src_on_target_True.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">put carrot on plate</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/success_obj_episode_18_moved_correct_obj_True_moved_wrong_obj_False_is_src_obj_grasped_True_consecutive_grasp_True_src_on_target_True.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">put spoon on table</div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/success_obj_episode_7_moved_correct_obj_True_moved_wrong_obj_False_is_src_obj_grasped_True_consecutive_grasp_True_src_on_target_True.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">put eggplant in basket</div>
-            </div>
-          </div>
-  
-  
-          <div class="carousel-item">
-            <div class="card">
-              <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/success_obj_episode_15_moved_correct_obj_True_moved_wrong_obj_False_is_src_obj_grasped_True_consecutive_grasp_True_src_on_target_True.mp4" type="video/mp4">
-              </video>
-              <div class="card-content">put carrot on plate</div>
-            </div>
-          </div>
-  
-
-        
-        </div>
-      <script src="script.js"></script>
-
-    </div>
-    
-
-  </div>
-
-  
-</section>
 
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3">Simulation benchmark LIBERO Demonstration</h2>
     <p class="content">Here, we demonstrate the evaluation examples of the proposed model on LIBERO benchmark. We pretrain on OXE datasets and fintune on LIBERO.</p>
+    <h3 class="title is-4">LIBERO-Goal</h3>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/1.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Open the top drawer and put the bowl inside</div>
+          </div>
+        </div>
+        
+        
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/2.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Put the bowl on top of the cabinet</div>
+          </div>
+        </div>
+  
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/3.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Put the bowl on the plate</div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/4.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Put the wine bottle on the rack</div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/5.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Open the middle drawer of the cabinet</div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/6.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Put the cream cheese in the bowl</div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/7.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Put the bowl on the stove</div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/8.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Put the wine bottle on top of the cabinet</div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/9.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Push the plate to the front of the stove</div>
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/libero/libero_goal/10.mp4" type="video/mp4">
+            </video>
+            <div class="card-content">Turn on the stove</div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
     <h3 class="title is-4">LIBERO-Long</h3>
     <div class="carousel-container">
       <div class="carousel">
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_4_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/1.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put both the alphabet soup and the tomato sauce in the basket</div>
+            <div class="card-content">Put the black bowl in the bottom drawer of the cab</div>
           </div>
         </div>
-
+        
+        
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_9_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/2.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put both the cream cheese box and the butter in the basket</div>
+            <div class="card-content">Put both the cream cheese box and the butter in the basket</div>
           </div>
         </div>
-
+  
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_14_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/3.mp4" type="video/mp4">
             </video>
-            <div class="card-content">turn on the stove and put the moka pot on it</div>
+            <div class="card-content">Put both moka pots on the stove</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_21_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/4.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the black bowl in the bottom drawer of the cabinet and close it</div>
+            <div class="card-content">Put the white mug on the plate and put the chocolate</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_29_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/5.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the white mug on the left plate and put the yellow and white mug on the right plate</div>
+            <div class="card-content">Put the white mug on the left plate and put the yellow mug on the right plate</div>
           </div>
         </div>  
       </div>
@@ -990,146 +279,49 @@
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_32_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/6.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the book and place it in the back compartment of the caddy</div>
+            <div class="card-content">Turn on the stove and put the moka pot on it</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_39_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/7.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the white mug on the plate and put the chocolate pudding to the right of the plate</div>
+            <div class="card-content">Put both the alphabet soup and the cream cheese box in the basket</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_45_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/8.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put both the alphabet soup and the cream cheese box in the basket</div>
+            <div class="card-content">Put the yellow mug in the microwave oven and close its door</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_53_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/9.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put both moka pots on the stove</div>
+            <div class="card-content">Put both the alphabet soup and the tomato sauce in the basket</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_long/rank1_60_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_long/10.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the yellow and white mug in the microwave and close it</div>
-          </div>
-        </div>  
-      </div>
-    </div>
-
-    <h3 class="title is-4">LIBERO-Spatial</h3>
-    <div class="carousel-container">
-      <div class="carousel">
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_1_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl between the plate and the ramekin and place it on the plate</div>
+            <div class="card-content">Pick up the book and place it in the back compartment</div>
           </div>
         </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_7_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl next to the ramekin and place it on the plate</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_14_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl from table center and place it on the plate</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_21_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl on the cookie box and place it on the plate</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_26_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl in the top drawer of the wooden cabinet and place it on the plate</div>
-          </div>
-        </div>  
-      </div>
-    </div>
-
-    <div class="carousel-container">
-      <div class="carousel">
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_36_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl on the ramekin and place it on the plate</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_41_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl next to the cookie box and place it on the plate</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_46_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl on the stove and place it on the plate</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_52_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl next to the plate and place it on the plate</div>
-          </div>
-        </div>
-
-        <div class="carousel-item">
-          <div class="card">
-            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_spatial/rank6_60_True.mp4" type="video/mp4">
-            </video>
-            <div class="card-content">pick up the black bowl on the wooden cabinet and place it on the plate</div>
-          </div>
-        </div>  
+        <!-- <button class="carousel-control left" onclick="prevSlide()">❮</button>
+        <button class="carousel-control right" onclick="nextSlide()">❯</button> -->  
       </div>
     </div>
 
@@ -1139,45 +331,47 @@
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_1_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/1.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the alphabet soup and place it in the basket</div>
+            <div class="card-content">Pick up the alphabet soup and place it in the basket</div>
           </div>
         </div>
-
+        
+        
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_7_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/2.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the cream cheese and place it in the basket</div>
+            <div class="card-content">Pick up the bbq sauce and place it in the basket</div>
           </div>
         </div>
-
+  
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_13_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/3.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the salad dressing and place it in the basket</div>
+            <div class="card-content">Pick up the chocolate pudding and place it in the basket</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_19_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/4.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the bbq sauce and place it in the basket</div>
+            <div class="card-content">Pick up the tomato sauce and place it in the basket</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_25_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/5.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the ketchup and place it in the basket</div>
+            <div class="card-content">Pick up the ketchup and place it in the basket</div>
           </div>
         </div>  
       </div>
@@ -1188,95 +382,97 @@
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_31_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/6.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the tomato sauce and place it in the basket</div>
+            <div class="card-content">Pick up the cream cheese and place it in the basket</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_37_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/7.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the butter and place it in the basket</div>
+            <div class="card-content">Pick up the salad dressing and place it in the basket</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_43_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/8.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the milk and place it in the basket</div>
+            <div class="card-content">Pick up the butter and place it in the basket</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_49_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/9.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the chocolate pudding and place it in the basket</div>
+            <div class="card-content">Pick up the milk and place it in the basket</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_object/rank0_55_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_object/10.mp4" type="video/mp4">
             </video>
-            <div class="card-content">pick up the orange juice and place it in the basket</div>
+            <div class="card-content">Pick up the orange juice and place it in the basket</div>
           </div>
         </div>  
       </div>
     </div>
 
-    <h3 class="title is-4">LIBERO-Goal</h3>
+    <h3 class="title is-4">LIBERO-Spitial</h3>
     <div class="carousel-container">
       <div class="carousel">
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_1_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/1.mp4" type="video/mp4">
             </video>
-            <div class="card-content">open the middle drawer of the cabinet</div>
+            <div class="card-content">Pick up the black bowl from table center and place on the plate</div>
           </div>
         </div>
-
+        
+        
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_7_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/2.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the bowl on the stove</div>
+            <div class="card-content">Pick up the black bowl on the stove and place it on the plate</div>
           </div>
         </div>
-
+  
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_13_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/3.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the wine bottle on top of the cabinet</div>
+            <div class="card-content">Pick up the black bowl on the cookie box and place it on the plate</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_19_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/4.mp4" type="video/mp4">
             </video>
-            <div class="card-content">open the top drawer and put the bowl inside</div>
+            <div class="card-content">Pick up the black bowl in the top drawer and place it on the plate</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_25_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/5.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the bowl on top of the cabinet</div>
+            <div class="card-content">Pick up the black bowl next to the ramekin and place it on the plate</div>
           </div>
         </div>  
       </div>
@@ -1287,45 +483,45 @@
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_31_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/6.mp4" type="video/mp4">
             </video>
-            <div class="card-content">push the plate to the front of the stove</div>
+            <div class="card-content">Pick up the black bowl on the cookie box and place it on the plate</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_38_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/7.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the cream cheese in the bowl</div>
+            <div class="card-content">Pick up the black bowl on the wooden cabinet and place it on the plate</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_43_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/8.mp4" type="video/mp4">
             </video>
-            <div class="card-content">turn on the stove</div>
+            <div class="card-content">Pick up the black bowl next to the cookie box and place it on the plate</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_49_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/9.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the bowl on the plate</div>
+            <div class="card-content">Pick up the black bowl next to the plate and place it on the plate</div>
           </div>
         </div>
-
+  
         <div class="carousel-item">
           <div class="card">
             <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/libero/libero_goal/rank0_55_True.mp4" type="video/mp4">
+              <source src="./static/video/libero/libero_spatial/10.mp4" type="video/mp4">
             </video>
-            <div class="card-content">put the wine bottle on the rack</div>
+            <div class="card-content">Pick up the black bowl between the plate and the receptacle and place it on the plate</div>
           </div>
         </div>  
       </div>
@@ -1334,7 +530,112 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Simulation benchmark CALVIN Demonstration</h2>
+    <p class="content">Here, we demonstrate the evaluation examples of the proposed model on CALVIN benchmark. We pretrain on OXE datasets and fintune on CALVIN.</p>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/1.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Open the top drawer and put the bowl inside</div> -->
+          </div>
+        </div>
+        
+        
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/2.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Put the bowl on top of the cabinet</div> -->
+          </div>
+        </div>
+  
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/3.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Put the bowl on the plate</div> -->
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/4.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Put the wine bottle on the rack</div> -->
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/5.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Open the middle drawer of the cabinet</div> -->
+          </div>
+        </div>  
+      </div>
+    </div>
 
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/6.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Put the cream cheese in the bowl</div> -->
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/7.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Put the bowl on the stove</div> -->
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/8.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Put the wine bottle on top of the cabinet</div> -->
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/9.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Push the plate to the front of the stove</div> -->
+          </div>
+        </div>
+  
+        <div class="carousel-item">
+          <div class="card">
+            <video id="dollyzoom1" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/video/calvin/10.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="card-content">Turn on the stove</div> -->
+          </div>
+        </div>  
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 

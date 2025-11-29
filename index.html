@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description"
         content="See Once, Then Act: Vision-Language-Action Model with Task Learning from One-Shot Video Demonstrations">
-  <meta name="keywords" content="Robot Policy Learning, Vision-Language-Action, Diffusion">
+  <meta name="keywords" content="One-Shot Visual Imitation Learning, Vision Language Action Models, Unseen Task Generalization, Cross-embodiment Transfer, Robot Policy Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>See Once, Then Act: Vision-Language-Action Model with Task Learning from One-Shot Video Demonstrations</title>
 
@@ -89,7 +89,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
      
-      <p><img class="img-fluid" alt="teaser" src="VideoVLA.png"></p>
+      <p><img class="img-fluid" alt="teaser" src="ViVLA.png"></p>
       <h2 class="subtitle has-text-centered">
       </h2>
     </div>
@@ -106,7 +106,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           Learning from demonstration is a powerful method for robotic skill acquisition. Nevertheless, a critical limitation lies in the substantial costs associated with gathering demonstration datasets, typically action-labeled robot data, which creates a fundamental constraint in the field. Video data offer a compelling solution as an alternative rich data source, containing extensive representations of both behavioral patterns and physical principles. This study introduces G3M , an innovative framework that exploits video data via Graph-to-Graphs Generative Modeling, which pre-trains models to generate future graphs conditioned on the graph within a video frame. The proposed G3M abstracts video frame content into graph representations by identifying object nodes and visual action nodes for capturing state information. It then effectively models internal structures and spatial relationships present in these graph constructions, with the objective of predicting forthcoming graphs. The generated graphs function as conditional inputs that guide the control policy in determining robotic behaviors. This concise method effectively encodes critical spatial relationships while facilitating accurate prediction of subsequent graph sequences, thus allowing the development of resilient control policy despite constraints in action-annotated training samples. Furthermore, these transferable graph representations enable the effective extraction of manipulation skills through human videos as well as recordings from robots with varying physical configurations. The experimental results demonstrate that G3M attains superior performance using merely 20% action-labeled data relative to comparable approaches. Moreover, our method outperforms the state-of-the-art method, showing performance gains exceeding 19% in simulated environments and 23% in real-world experiments, while delivering improvements of over 35% in cross-embodiment transfer experiments and exhibiting strong performance on long-horizon tasks.
+            Developing robust and general-purpose manipulation policies represents a fundamental objective in robotics research. While Vision-Language-Action (VLA) models have demonstrated promising capabilities for end-to-end robot control, existing approaches still exhibit limited generalization to tasks beyond their training distributions. In contrast, humans possess remarkable proficiency in acquiring novel skills by simply observing others performing them once. Inspired by this capability, we propose ViVLA, a generalist robotic manipulation policy that achieves efficient task learning from a single expert demonstration video at test time. Our approach jointly processes an expert demonstration video alongside the robot’s visual observations to predict both the demonstrated action sequences and subsequent robot actions, effectively distilling fine-grained manipulation knowledge from expert behavior and transferring it seamlessly to the agent. To enhance the performance of ViVLA, we develop a scalable expert-agent pair data generation pipeline capable of synthesizing paired trajectories from easily accessible human videos, further augmented by curated pairs from publicly available datasets. This pipeline produces a total of 892,911 expert-agent samples for training ViVLA. Experimental results demonstrate that our ViVLA is able to acquire novel manipulation skills from only a single expert demonstration video at test time. Our approach achieves over 30% improvement on unseen LIBERO tasks and maintains above 35% gains with cross-embodiment videos. Real-world experiments demonstrate effective learning from human videos, yielding more than 38% improvement on unseen tasks.
           </p>
         </div>
       </div>
